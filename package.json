@@ -1,24 +1,14 @@
 {
-  "name": "pcm-additional-info-scraper",
+  "name": "opf-br-pcm-rule-extractor",
   "version": "1.0.0",
-  "description": "Extrai tabelas de regras de obrigatoriedade do additionalInfo das páginas PCM do Confluence",
+  "description": "Repositório distribui a Claude Skill pcm-additional-info; scripts aqui são facade para a skill embarcada",
+  "private": true,
   "type": "module",
-  "main": "src/index.ts",
   "scripts": {
-    "start": "npx tsx src/index.ts",
-    "build": "tsc",
-    "lint": "tsc --noEmit",
-    "list": "npx tsx src/tools/additionalInfoList.ts"
-  },
-  "dependencies": {
-    "cheerio": "^1.0.0",
-    "dotenv": "^17.4.2",
-    "node-fetch": "^3.3.2"
-  },
-  "devDependencies": {
-    "@types/node": "^22.0.0",
-    "tsx": "^4.19.0",
-    "typescript": "^5.7.0"
+    "skill:install": "npm --prefix .claude/skills/pcm-additional-info/extractor install",
+    "skill:start": "npm --prefix .claude/skills/pcm-additional-info/extractor run start",
+    "skill:lint": "npm --prefix .claude/skills/pcm-additional-info/extractor run lint",
+    "start": "node .claude/skills/pcm-additional-info/scripts/ensure-fresh.mjs --force"
   },
   "engines": {
     "node": ">=18.0.0"
