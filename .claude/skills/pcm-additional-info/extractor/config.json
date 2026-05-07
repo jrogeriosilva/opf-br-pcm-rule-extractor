@@ -7,6 +7,7 @@
   "pages": [
     { "pageId": "1621622796", "title": "Iniciação de Pagamentos" },
     { "pageId": "1623162886", "title": "Iniciação de Pagamentos Sem Redirecionamento" },
-    { "pageId": "1622081540", "title": "Pagamentos Automáticos" }
+    { "pageId": "1622081540", "title": "Pagamentos Automáticos" },
+    { "pageId": "1212153857", "title": "Regras de Obrigatoriedade additionalInfo - SG" }
   ]
 }
