@@ -92,5 +92,6 @@ Definidas em `extractor/config.json`:
 - Iniciação de Pagamentos
 - Iniciação de Pagamentos Sem Redirecionamento
 - Pagamentos Automáticos
+- Regras de Obrigatoriedade additionalInfo - SG
 
 Para adicionar/atualizar páginas, edite `extractor/config.json` (campos `pageId` e `title`).
