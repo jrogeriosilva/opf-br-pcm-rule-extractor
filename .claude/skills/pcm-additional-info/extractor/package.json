@@ -4,19 +4,12 @@
   "description": "Extrai tabelas de regras de obrigatoriedade do additionalInfo das páginas PCM do Confluence (embarcado pela skill pcm-additional-info)",
   "private": true,
   "type": "module",
-  "main": "src/index.ts",
+  "main": "src/index.mjs",
   "scripts": {
-    "start": "npx tsx src/index.ts",
-    "lint": "tsc --noEmit"
+    "start": "node src/index.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.0.0",
-    "domhandler": "^5.0.0",
-    "tsx": "^4.19.0",
-    "typescript": "^5.7.0"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -7,7 +7,6 @@
   "scripts": {
     "skill:install": "npm --prefix .claude/skills/pcm-additional-info/extractor install",
     "skill:start": "npm --prefix .claude/skills/pcm-additional-info/extractor run start",
-    "skill:lint": "npm --prefix .claude/skills/pcm-additional-info/extractor run lint",
     "start": "node .claude/skills/pcm-additional-info/scripts/ensure-fresh.mjs --force"
   },
   "engines": {
