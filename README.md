@@ -45,6 +45,20 @@ extractor/                            extrator embarcado (Node.js puro, autocont
    - chama `lookup.mjs --field tokenId`;
    - recebe **só** o registro daquele campo (com `regraDePreenchimento`, `metodos`, `endpoints`, etc.) e implementa.
 
+## Economia de tokens de input
+
+A skill evita que o Claude receba o `additional-info.json` inteiro a cada consulta. A tabela abaixo mostra a diferença entre as duas abordagens:
+
+| Abordagem | Tamanho | Tokens (aprox.) |
+|---|---|---|
+| `Read` no JSON completo (sem skill) | ~127 KB | **~32.600 tokens** |
+| `lookup.mjs --field tokenId` (1 match) | ~1 KB | **~260 tokens** |
+| `lookup.mjs --contains pagador` (3 matches) | ~3 KB | **~670 tokens** |
+
+**Economia por consulta: 98–99% dos tokens de input** (~32.000 tokens poupados).
+
+> Estimativas calculadas com dataset sintético representativo: 165 campos distribuídos nas 4 páginas (70 + 50 + 25 + 20), cada campo com os 12 atributos do schema (incluindo `regraDePreenchimento` de ~200 chars). O JSON real pode ser maior — campos com regras mais longas elevam ainda mais a economia. Para medir com dados reais, rode `npm run start` em um ambiente com acesso ao Confluence e use `wc -c` no `output/additional-info.json` gerado.
+
 ## Como funciona
 
 ```
