@@ -8,6 +8,14 @@
     { "pageId": "1621622796", "title": "Iniciação de Pagamentos" },
     { "pageId": "1623162886", "title": "Iniciação de Pagamentos Sem Redirecionamento" },
     { "pageId": "1622081540", "title": "Pagamentos Automáticos" },
-    { "pageId": "1212153857", "title": "Regras de Obrigatoriedade additionalInfo - SG" }
+    { "pageId": "1212153857", "title": "Regras de Obrigatoriedade additionalInfo - SG" },
+    { "pageId": "1621786627", "title": "DC - Câmbio" },
+    { "pageId": "1622736899", "title": "DC - Cartão de Crédito" },
+    { "pageId": "1622474756", "title": "DC - Consentimento" },
+    { "pageId": "1623195649", "title": "DC - Contas" },
+    { "pageId": "1622212611", "title": "DC - Dados Cadastrais" },
+    { "pageId": "1623130114", "title": "DC - Investimentos" },
+    { "pageId": "1620181433", "title": "DC - Operações de Crédito" },
+    { "pageId": "1623293953", "title": "DC - Recursos" }
   ]
 }
